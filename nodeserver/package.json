@@ -8,7 +8,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "author": "\"isha\"",
+  "author": "Pratibha Kumari",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
