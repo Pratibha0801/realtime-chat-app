@@ -29,10 +29,15 @@ socket.on("send", message => {
     return;
   }
 
+  if (!message || !message.trim()) {
+    console.warn("Empty message received");
+    return;
+  }
+
   socket.broadcast.emit("receive", {
     avatar: user.avatar,
     name: user.name,
-    message: message
+    message: message.trim()
   });
 });
 
